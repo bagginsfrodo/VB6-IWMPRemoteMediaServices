@@ -1,0 +1,75 @@
+<!-- 
+Demo Skin
+©2015 Kevin Lincecum AKA FrodoBaggins   email: baggins DOT frodo AT_SYMBOL gmail DOT com
+License: Free usage as long as you send me an email and mention me somewhere in your readme, about, etc
+
+
+Skin Programming Reference
+https://msdn.microsoft.com/en-us/library/windows/desktop/dd564359%28v=vs.85%29.aspx
+https://msdn.microsoft.com/en-us/library/windows/desktop/dd564952%28v=vs.85%29.aspx
+-->
+
+
+<THEME title="RTestSkin" author="frodobaggins" copyright="©2015 Kevin Lincecum">
+
+<VIEW onload="JScript: OnLoad();"
+	titlebar="false"
+	resizable="false"
+	backgroundcolor="black"
+	id = "s_myview"
+>
+
+	<EFFECTS
+		id = "s_viseffects"
+		top = "0"
+		left = "0"
+		width = "wmpprop:view.width"
+		height = "wmpprop:view.height"
+	/>
+
+	<EQUALIZERSETTINGS id = "s_eqsettings"/>
+
+	<VIDEO
+		id = "s_vid"
+		top = "0"
+		left = "0"
+		width = "wmpprop:view.width"
+		height = "wmpprop:view.height"
+	/>
+
+	<VIDEOSETTINGS id = "s_vidsettings"/>
+
+        <TEXT 
+            id="s_text1"
+            foregroundColor = "white"
+	    scrolling = "true"
+            top = "0"
+            left = "0"
+            width = "200"
+            height = "20"
+            onclick = "JScript: YFM();"
+        />
+
+        <TEXT 
+            id="s_text2"
+            foregroundColor = "white"
+            top = "0"
+            left = "220"
+            width = "60"
+            height = "20"
+            value="Volume: "
+        />
+
+        <TEXT 
+            id="s_text3"
+            foregroundColor = "white"
+            top = "0"
+            left = "280"
+            width = "30"
+            height = "20"
+            value="wmpprop:player.settings.volume"
+        />
+
+       
+</VIEW>
+</THEME> 

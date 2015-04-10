@@ -1,0 +1,44 @@
+/*
+RemoteWMP.idl,RemoteWMP.tlb
+©2015 Kevin Lincecum AKA FrodoBaggins   email: baggins DOT frodo AT_SYMBOL gmail DOT com
+License: Free usage as long as you send me an email and mention me somewhere in your readme, about, etc
+*/
+
+[
+    uuid(229062D8-C251-4B8B-8B7A-5F7C81A2A718),
+    version(1.0),
+    helpstring("Remoting Windows Media Player TypeLibrary")
+]
+library RemoteWMP
+{
+    importlib("stdole2.tlb");
+
+
+    [
+      odl,
+      uuid(CBB92747-741F-44fe-AB5B-F1A48F3B2A59)
+    ]
+
+    interface IWMPRemoteMediaServices : IUnknown
+    {
+        HRESULT _stdcall GetServiceType(
+                        [in, out]  BSTR* pbstrType);
+        HRESULT _stdcall GetApplicationName(
+                        [in, out]  BSTR* pbstrName);					
+        HRESULT _stdcall GetScriptableObject(
+                        [in, out]  BSTR* pbstrName,
+                        [in, out]  IDispatch** ppDispatch);
+        HRESULT _stdcall GetCustomUIMode(
+                        [in, out]  BSTR* pbstrFile);
+    };
+
+
+    [
+      dllname("<no entry points>")
+    ]
+    module constants
+    {
+        const LPSTR IID_IWMPRemoteMediaServices = "{CBB92747-741F-44FE-AB5B-F1A48F3B2A59}";
+    };
+
+};
