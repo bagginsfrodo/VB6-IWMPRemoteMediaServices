@@ -25,6 +25,6 @@
 *.frx binary
 *.tlb binary
 *.idl eol=crlf
-*.js  eol=crlf
-*.wms eol=crlf
+*.js  binary
+*.wms binary
 *.jpg binary
