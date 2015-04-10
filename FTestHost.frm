@@ -599,11 +599,11 @@ End Sub
 Private Sub MyShortcutButtons_Click(Index As Integer)
     Select Case Index
         Case 0
-            Play "M:\Music\3 Doors Down\the better life\3 Doors Down - Duck and Run.mp3"
-            'Dbg.WrLn "This button is commented out in code..."
+            'Play "M:\Music\3 Doors Down\the better life\3 Doors Down - Duck and Run.mp3"
+            Dbg.WrLn "This button is commented out in code..."
         Case 1
-            Play "E:\User Profile Files\Videos\Personal\Lana Del Rey - Summertime Sadness.mp4"
-            'Dbg.WrLn "This button is commented out in code..."
+            'Play "E:\User Profile Files\Videos\Personal\Lana Del Rey - Summertime Sadness.mp4"
+            Dbg.WrLn "This button is commented out in code..."
         Case 2
             myView.backgroundColor = "purple"
     End Select
