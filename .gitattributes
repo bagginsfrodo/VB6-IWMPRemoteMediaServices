@@ -22,9 +22,9 @@
 *.cls eol=crlf
 *.ctl eol=crlf
 *.vbp eol=crlf
-*.frx binary
-*.tlb binary
+*.frx -text
+*.tlb -text
 *.idl eol=crlf
-*.js  binary
-*.wms binary
-*.jpg binary
+*.js  -text
+*.wms -text
+*.jpg -text
