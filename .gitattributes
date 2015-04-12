@@ -22,9 +22,11 @@
 *.cls eol=crlf
 *.ctl eol=crlf
 *.vbp eol=crlf
-*.frx -text
-*.tlb -text
+*.frx -text -diff
+*.tlb -text -diff
 *.idl eol=crlf
-*.js  -text
-*.wms -text
-*.jpg -text
+*.js  -text -diff
+*.wms -text -diff
+*.jpg -text -diff
+*.wmz -text -diff
+*.zip -text -diff
